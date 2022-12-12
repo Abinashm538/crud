@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "name": "Abinash",
+      "id": 1
+    },
+    {
+      "name": "abc",
+      "salary": "19899",
+      "cname": "jdhjk",
+      "id": 2
+    },
+    {
+      "name": "kahnu",
+      "salary": "30000",
+      "cname": "test",
+      "id": 3
+    },
+    {
+      "name": "sai",
+      "salary": "600000",
+      "cname": "netyantra",
+      "id": 4
+    },
+    {
+      "name": "mukesh",
+      "salary": "6788787",
+      "cname": "google",
+      "id": 5
+    }
+  ]
+}

@@ -48,3 +48,46 @@
     transform: scale(.9);
 
 }
+#usr>table{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 4px;
+}
+#usr>table>tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+#usr>table>tr>th{
+    background-color: rgb(76, 74, 74);
+    color: antiquewhite;
+    height: 40px;
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#usr>table>tr>td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 34%;
+    border: 2px solid rgb(64, 61, 61);
+    border-spacing: 0;
+    background-color: burlywood;
+}
+#usr>table>tr>td>button{
+    background-color: black;
+    color: rgb(229, 212, 116);
+    height: 25px;
+    width: 55px;
+    border-radius: 5px;
+    border: 0;
+}
+

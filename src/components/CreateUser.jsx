@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import desgine from './home.module.css'
 
@@ -6,16 +7,24 @@ const CreateUser = () => {
     let [salary,setSalary]=useState("")
     let [cname,setCname]=useState("")
 
+    let formhandle=(e)=>{
+      let payload={name,salary,cname}
+      axios.post("http://localhost:3000/data",payload)
+      .then(()=>{
+        console.log("Added");
+      })
+    }
+
   return (
-    <div id={desgine.frm}>
-        <label htmlFor="">Emp Name</label>
-        <input type="text" onChange={(e)=>setName(e.target.value)} value={name} /><br />
-        <label htmlFor="">Emp salary</label>
-        <input type="number" onChange={(e)=>setSalary(e.target.value)} value={salary}/><br />
-        <label htmlFor="">Emp Company</label>
-        <input type="text" onChange={(e)=>setCname(e.target.value)} value={cname}/><br /><br />
-        <button>Submit</button>
-    </div>
+       <form action="" id={desgine.frm}>
+         <label htmlFor="">Emp Name</label>
+         <input type="text" onChange={(e)=>setName(e.target.value)} value={name} required /><br />
+         <label htmlFor="">Emp salary</label>
+         <input type="number" onChange={(e)=>setSalary(e.target.value)} value={salary} required/><br />
+         <label htmlFor="">Emp Company</label>
+         <input type="text" onChange={(e)=>setCname(e.target.value)} value={cname} required/><br /><br />
+        <button onClick={formhandle}>Submit</button>
+       </form>
   )
 }
 
