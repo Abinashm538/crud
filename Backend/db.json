@@ -2,6 +2,8 @@
   "data": [
     {
       "name": "Abinash",
+      "salary": "300",
+      "cname": "jspider",
       "id": 1
     },
     {
