@@ -15,8 +15,6 @@ const App = () => {
          <Route path='/u' element={<Users/>}/>
         </Routes>
         </BrowserRouter> 
-         {/* <CreateUser/>
-         <Users/> */}
     </div>
   )
 }
