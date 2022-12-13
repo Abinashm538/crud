@@ -8,6 +8,7 @@ const CreateUser = () => {
     let [cname,setCname]=useState("")
 
     let formhandle=(e)=>{
+      e.preventDefault()
       let payload={name,salary,cname}
       axios.post("http://localhost:3000/data",payload)
       .then(()=>{

@@ -7,28 +7,40 @@
       "id": 1
     },
     {
-      "name": "abc",
+      "name": "Akhlesh",
       "salary": "19899",
-      "cname": "jdhjk",
+      "cname": "L&T",
       "id": 2
     },
     {
       "name": "kahnu",
       "salary": "30000",
-      "cname": "test",
+      "cname": "Testyantra",
       "id": 3
     },
     {
-      "name": "sai",
+      "name": "Sai",
       "salary": "600000",
-      "cname": "netyantra",
+      "cname": "Netyantra",
       "id": 4
     },
     {
-      "name": "mukesh",
+      "name": "Mukesh",
       "salary": "6788787",
-      "cname": "google",
+      "cname": "Google",
       "id": 5
+    },
+    {
+      "name": "Binod",
+      "salary": "17.50",
+      "cname": "NGR",
+      "id": 6
+    },
+    {
+      "name": "prajwal",
+      "salary": "10000",
+      "cname": "TYSS",
+      "id": 7
     }
   ]
 }
