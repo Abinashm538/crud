@@ -34,9 +34,7 @@ const Users = () => {
           )
         }
       )}
-
-    </table>
-      
+    </table> 
   </div>
   )
 }
