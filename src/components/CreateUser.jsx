@@ -21,6 +21,7 @@ const CreateUser = () => {
 
   return (
        <form action="" id={desgine.frm}>
+        <h2>Create User</h2>
          <label htmlFor="">Emp Name</label>
          <input type="text" onChange={(e)=>setName(e.target.value)} value={name} required /><br />
          <label htmlFor="">Emp salary</label>
