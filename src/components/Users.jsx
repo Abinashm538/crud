@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import desgine from './home.module.css'
+import { Link } from 'react-router-dom'
 
 const Users = () => {
   let [udata,setUdata]=useState([])
@@ -24,10 +25,10 @@ const Users = () => {
           return(
             <tr>
               <td>{e.name}</td>
-              <td>{e.salary}</td>
+              <td>{e.salary}</td> 
               <td>{e.cname}</td>
               <td>
-                <button>Edit</button>
+                <button><Link to="/e">Edit</Link></button> 
                 <button>Delete</button>
               </td>
             </tr>

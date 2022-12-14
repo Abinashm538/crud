@@ -1,11 +1,13 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import desgine from './home.module.css'
+import { useNavigate} from 'react-router-dom'
 
 const CreateUser = () => {
     let [name,setName]=useState("")
     let [salary,setSalary]=useState("")
     let [cname,setCname]=useState("")
+    let Navigate = useNavigate()
 
     let formhandle=(e)=>{
       e.preventDefault()
@@ -14,6 +16,7 @@ const CreateUser = () => {
       .then(()=>{
         console.log("Added");
       })
+      Navigate("/u")
     }
 
   return (
