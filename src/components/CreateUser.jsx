@@ -26,7 +26,7 @@ const CreateUser = () => {
          <label htmlFor="">Emp salary</label>
          <input type="number" onChange={(e)=>setSalary(e.target.value)} value={salary} required/><br />
          <label htmlFor="">Emp Company</label>
-         <input type="text" onChange={(e)=>setCname(e.target.value)} value={cname} required/><br /><br />
+         <input type="text" onChange={(e)=>setCname(e.target.value.toUpperCase())} value={cname} required/><br /><br />
         <button onClick={formhandle}>Submit</button>
        </form>
   )
