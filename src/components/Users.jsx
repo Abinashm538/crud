@@ -28,7 +28,7 @@ const Users = () => {
               <td>{e.salary}</td> 
               <td>{e.cname}</td>
               <td>
-                <button><Link to="/e">Edit</Link></button> 
+                <button><Link to={`/e/${e.id}`}>Edit</Link></button> 
                 <button>Delete</button>
               </td>
             </tr>
