@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router-dom"
+import { Navigate, useNavigate, useParams } from "react-router-dom"
 import desgine from "./home.module.css"
 
 const EditUsers=()=>{
@@ -8,7 +8,7 @@ const EditUsers=()=>{
     let [salary,setSalary]=useState("")
     let [cname,setCname]=useState("")
     let {index} = useParams()
-    let navigator=useNavigate()
+    let navigate=useNavigate()
 
     console.log(index);
 
@@ -23,14 +23,18 @@ const EditUsers=()=>{
         })
     },[])
 
-    let formHandle=()=>{
-        let payload={name,salary,cname}
+    let formHandle=(e)=>{
+        e.preventDefault()
+        let payload = {name,salary,cname}
         axios.put(`http://localhost:3000/data/${index}`,payload)
         .then(()=>{
-          console.log("Added");
+            console.log("Data has been added");
         })
-        navigator("/u")
+        navigate("/u")
+
     }
+
+    
     return(
         <form action="" id={desgine.frm} >
             <h2>Edit User</h2>
@@ -40,7 +44,7 @@ const EditUsers=()=>{
             <input type="number" onChange={(e)=>setSalary(e.target.value)} value={salary} required/><br />
             <label htmlFor="">Emp Company</label>
             <input type="text" onChange={(e)=>setCname(e.target.value)} value={cname} required/><br /><br />
-         <button onClick={formHandle}>Submit</button>
+         <button onClick={formHandle} >Submit</button>
       </form>
     )
 }

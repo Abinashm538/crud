@@ -1,48 +1,6 @@
 {
   "data": [
     {
-      "name": "Abinash",
-      "salary": "300",
-      "cname": "jspider",
-      "id": 1
-    },
-    {
-      "name": "Akhlesh",
-      "salary": "19899",
-      "cname": "L&T",
-      "id": 2
-    },
-    {
-      "name": "kahnu",
-      "salary": "30000",
-      "cname": "Testyantra",
-      "id": 3
-    },
-    {
-      "name": "Sai",
-      "salary": "600000",
-      "cname": "Netyantra",
-      "id": 4
-    },
-    {
-      "name": "Mukesh",
-      "salary": "6788787",
-      "cname": "Google",
-      "id": 5
-    },
-    {
-      "name": "Binod",
-      "salary": "17.50",
-      "cname": "NGR",
-      "id": 6
-    },
-    {
-      "name": "prajwal",
-      "salary": "10000",
-      "cname": "TYSS",
-      "id": 7
-    },
-    {
       "name": "abc",
       "salary": "10000",
       "cname": "tCS",
@@ -85,9 +43,9 @@
       "id": 14
     },
     {
-      "name": "",
-      "salary": "",
-      "cname": "",
+      "name": "hakkll",
+      "salary": "09890",
+      "cname": "asc",
       "id": 15
     },
     {

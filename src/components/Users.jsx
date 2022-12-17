@@ -10,6 +10,12 @@ const Users = () => {
     axios.get("http://localhost:3000/data")
     .then((response)=>{setUdata(response.data)})
   },[])
+
+  let deleteData=(a)=>{
+    axios.delete(`http://localhost:3000/data/${a}`)
+    // window.location.assign("/u")
+    
+  }
  
   return (
     <div id={desgine.usr}>
@@ -21,15 +27,15 @@ const Users = () => {
         <th>Action</th>
       </tr>
       {udata.map(
-        (e)=>{
+        (e,index)=>{
           return(
-            <tr>
+            <tr key={e.id}>
               <td>{e.name}</td>
               <td>{e.salary}</td> 
               <td>{e.cname}</td>
               <td>
                 <button><Link to={`/e/${e.id}`}>Edit</Link></button> 
-                <button>Delete</button>
+                <button onClick={()=>{deleteData(index)}}>Delete</button>
               </td>
             </tr>
           )
