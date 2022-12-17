@@ -13,7 +13,9 @@ const Users = () => {
 
   let deleteData=(a)=>{
     axios.delete(`http://localhost:3000/data/${a}`)
-    // window.location.assign("/u")
+    .then(()=>{
+      window.location.assign('/u')
+    })
     
   }
  
@@ -27,7 +29,7 @@ const Users = () => {
         <th>Action</th>
       </tr>
       {udata.map(
-        (e,index)=>{
+        (e)=>{
           return(
             <tr key={e.id}>
               <td>{e.name}</td>
@@ -35,7 +37,7 @@ const Users = () => {
               <td>{e.cname}</td>
               <td>
                 <button><Link to={`/e/${e.id}`}>Edit</Link></button> 
-                <button onClick={()=>{deleteData(index)}}>Delete</button>
+                <button onClick={()=>{deleteData(e.id)}}>Delete</button>
               </td>
             </tr>
           )
