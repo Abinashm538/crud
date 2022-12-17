@@ -88,6 +88,9 @@
     border-radius: 5px;
     border: 0;
 }
+#usr>table>tr>td>button:hover{
+    transform: scale(.9);
+}
 #usr>table>tr>td>button>a{
     color: rgb(229, 212, 116);
     text-decoration: none;
